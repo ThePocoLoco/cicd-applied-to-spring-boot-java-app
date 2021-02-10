@@ -13,7 +13,7 @@ EXPOSE 8080
 ARG JAR_FILE
 
 # Add the application's jar to the container
-COPY ${JAR_FILE} /TEST_JAR.jar
+COPY ${JAR_FILE} TEST_JAR.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/TEST_JAR.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","TEST_JAR.jar"]

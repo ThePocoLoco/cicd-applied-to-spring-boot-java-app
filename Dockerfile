@@ -16,4 +16,4 @@ ARG JAR_FILE
 COPY ${JAR_FILE} TEST_JAR.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","TEST_JAR.jar"]
+CMD java -jar /home/travis/build/ThePocoLoco/cicd-applied-to-spring-boot-java-app/target/cicd-applied-to-spring-boot-java-app-0.0.1-SNAPSHOT-docker-info.jar

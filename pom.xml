@@ -14,7 +14,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cicd-applied-to-spring-boot-java-app</name>
 	<description>Implementing CI/CD on Spring Boot Java App</description>
-	<properties>        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<properties>        
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<maven.deploy.skip>true</maven.deploy.skip>
@@ -94,7 +95,7 @@
 			                    </artifactItem>
 			                </artifactItems>
 						<buildArgs>
-							<JAR_FILE>TEST_APP.jar</JAR_FILE>
+							<JAR_FILE>./target/TEST_APP.jar</JAR_FILE>
 						</buildArgs>
 			            </configuration>
 			        </execution>

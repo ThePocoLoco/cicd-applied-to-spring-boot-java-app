@@ -15,8 +15,6 @@
 	<name>cicd-applied-to-spring-boot-java-app</name>
 	<description>Implementing CI/CD on Spring Boot Java App</description>
 	<properties>        
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<maven.deploy.skip>true</maven.deploy.skip>
 		<docker.image.prefix>thepocoloco</docker.image.prefix>

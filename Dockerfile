@@ -13,4 +13,4 @@ EXPOSE 8080
 COPY ./target/cicd-applied-to-spring-boot-java-app-0.0.1-SNAPSHOT.jar TEST_JAR.jar
 	 
 # Run the jar file 
-CMD java -jar TEST_JAR.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","TEST_JAR.jar"]

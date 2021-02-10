@@ -76,7 +76,7 @@
 			<configuration>
 				<repository>${docker.image.prefix}/${project.artifactId}</repository>
 				<buildArgs>
-					<JAR_FILE>app.jar</JAR_FILE>
+					<JAR_FILE>TEST_APP.jar</JAR_FILE>
 				</buildArgs>
 			</configuration>
 		</plugin>

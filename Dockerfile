@@ -10,7 +10,7 @@ VOLUME /tmp
 EXPOSE 8080
 
 # Add the application's jar to the container
-COPY /home/travis/build/ThePocoLoco/cicd-applied-to-spring-boot-java-app/target/cicd-applied-to-spring-boot-java-app-0.0.1-SNAPSHOT.jar TEST_JAR.jar
-
+COPY ./target/cicd-applied-to-spring-boot-java-app-0.0.1-SNAPSHOT.jar TEST_JAR.jar
+	 
 # Run the jar file 
 CMD java -jar TEST_JAR.jar

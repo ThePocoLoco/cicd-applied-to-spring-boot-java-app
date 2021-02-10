@@ -11,7 +11,7 @@ services:
 before_install:
 - mvn clean
 - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD" docker.io
-- docker pull openjdk:8-jdk-alpine
+- docker pull openjdk:8
 - chmod +x mvnw
 
 script:

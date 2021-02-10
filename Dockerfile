@@ -1,5 +1,5 @@
 # Start with a base image containing Java runtime
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8
 
 # Add Maintainer Info
 LABEL maintainer="YoYoTheDOco"
@@ -14,7 +14,7 @@ EXPOSE 8080
 ARG JAR_FILE
 
 # Add the application's jar to the container
-COPY ${JAR_FILE} /app.jar
+COPY ${JAR_FILE} /TEST_JAR.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/TEST_JAR.jar"]
